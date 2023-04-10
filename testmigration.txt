@@ -1,0 +1,127 @@
+php artisan make:migration books_table;
+
+php artisan make:migration create_author_book_table;
+
+php artisan make:migration create_authors_table;
+
+php artisan make:migration create_order_histories_table;
+
+php artisan make:migration create_order_items_table;
+
+php artisan make:migration create_orders_table;
+
+php artisan make:migration create_languages_table;
+
+php artisan make:migration create_publishers_table;
+
+php artisan make:migration create_customers_table;
+
+php artisan make:migration create_customers_address_table;
+
+php artisan make:migration create_countries_table;
+
+php artisan make:migration create_shipping_methods_table;
+////////////////
+seeder
+
+php artisan make:seeder LanguageSeeder
+
+
+php artisan make:seeder PublisherSeeder
+
+php artisan make:seeder CustomerSeeder
+
+Countries
+
+php artisan make:seeder CountrieSeeder
+
+
+Shipping_methods
+php artisan make:seeder Shipping_methodSeeder
+
+
+php artisan make:seeder BookSeeder
+
+Books
+
+php artisan make:seeder Author_Book_Seeder
+
+///////////////
+CREATE AUTHOR BOOK
+///////////
+
+php artisan make:seeder Customer_Addresses_Seeder
+
+
+php artisan make:seeder Orders_Seeder
+
+php artisan make:seeder Order_items_Seeder
+
+
+Order_items
+
+php artisan make:seeder Order_Histories_Seeder
+
+Order_histories
+
+
+
+
+
+php artisan make:seeder AuthorBookSeeder
+
+AuthorBookSeeder
+
+/////////
+
+Make models;;
+
+php artisan make:Model BookPrice -a
+
+
+
+Schema::create('prices', function (Blueprint $table) {
+            $table->id();
+            $table->string('book_id');
+            $table->integer('price');
+            $table->timestamps();
+        });
+
+
+php artisan make:Model Book
+
+php artisan make:Model Customer
+
+php artisan make:Model CustomerAddress
+
+php artisan make:Model Author
+
+php artisan make:Model Country
+
+
+
+php artisan make:Model Mechanic -a
+
+php artisan make:Model Car -a
+
+php artisan make:Model Owner -a
+
+
+php artisan make:Model Image -a
+
+mysql --host=192.168.1.192 --user=root--password=admin 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
